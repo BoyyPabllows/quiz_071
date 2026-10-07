@@ -6,7 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <title>SIAKAD - Transaksi Peminjaman Asset</title>
+    <title>Transaksi Penyewaan PS</title>
 
     <link
       href="vendor/fontawesome-free/css/all.min.css"
@@ -137,7 +137,7 @@
           <div class="sidebar-brand-icon rotate-n-15">
             <i class="fas fa-graduation-cap"></i>
           </div>
-          <div class="sidebar-brand-text mx-3">SIAKAD <sup>APP</sup></div>
+          <div class="sidebar-brand-text mx-3">RENTAL PS <sup>ADMIN</sup></div>
         </a>
 
         <hr class="sidebar-divider my-0" />
@@ -154,14 +154,7 @@
         <li class="nav-item">
           <a class="nav-link" href="master_asset.html">
             <i class="fas fa-fw fa-boxes"></i>
-            <span>Master Data Asset</span></a
-          >
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="tables_mhs.html">
-            <i class="fas fa-fw fa-user-graduate"></i>
-            <span>Master Data Mahasiswa</span></a
+            <span>Master Unit PS</span></a
           >
         </li>
 
@@ -172,7 +165,7 @@
         <li class="nav-item active">
           <a class="nav-link" href="transaksi.html">
             <i class="fas fa-fw fa-clipboard-list"></i>
-            <span>Transaksi Peminjaman</span></a
+            <span>Transaksi Sewa</span></a
           >
         </li>
 
@@ -204,13 +197,6 @@
                   role="button"
                   data-toggle="dropdown"
                 >
-                  <span
-                    class="mr-2 d-none d-lg-inline text-gray-600 small font-weight-bold"
-                    >Dr. Dosen Pengampuh, M.Kom</span
-                  >
-                  <img
-                    class="img-profile rounded-circle"
-                    src="img/undraw_profile.svg"
                   />
                 </a>
               </li>
@@ -221,14 +207,14 @@
             <div class="d-flex align-items-center justify-content-between mb-4">
               <h1 class="h3 mb-0 text-gray-800 font-weight-bold">
                 <i class="fas fa-clipboard-list text-primary mr-2"></i>
-                Transaksi Peminjaman Asset Kampus
+                Manajemen Transaksi Penyewaan PS
               </h1>
               <button
                 class="btn btn-primary font-weight-bold shadow-sm"
                 data-toggle="modal"
                 data-target="#modalInputPinjam"
               >
-                <i class="fas fa-plus-circle mr-1"></i> Buat Peminjaman Baru
+                <i class="fas fa-plus-circle mr-1"></i> Sewa PS Baru
               </button>
             </div>
 
@@ -238,7 +224,7 @@
                 class="card-header py-3 bg-white d-flex justify-content-between align-items-center"
               >
                 <h6 class="m-0 font-weight-bold text-primary">
-                  Daftar Peminjaman Asset (Dari API Server)
+                  Daftar Riwayat Transaksi Penyewaan PS
                 </h6>
                 <button
                   class="btn btn-sm btn-outline-primary"
@@ -258,15 +244,13 @@
                     <thead class="thead-siakad">
                       <tr>
                         <th class="text-center" style="width: 5%">No</th>
-                        <th style="width: 10%">ID Pinjam</th>
-                        <th style="width: 18%">Mahasiswa</th>
-                        <th style="width: 14%">Jurusan</th>
-                        <th style="width: 20%">Asset Dipinjam</th>
-                        <th class="text-center" style="width: 7%">Qty</th>
-                        <th style="width: 12%">Tgl Pinjam</th>
-                        <th style="width: 12%">Tgl Kembali</th>
-                        <th class="text-center" style="width: 10%">Status</th>
-                        <th class="text-center" style="width: 6%">Slip</th>
+                        <th style="width: 10%">ID TX</th>
+                        <th style="width: 18%">Nama Penyewa</th>
+                        <th style="width: 14%">Unit PS</th>
+                        <th style="width: 20%">Tipe</th>
+                        <th class="text-center" style="width: 7%">Durasi</th>
+                        <th style="width: 12%">Total Bayar</th>
+                        <th style="width: 12%">Waktu Sewa</th>
                       </tr>
                     </thead>
                     <tbody id="tbodyPinjam">
@@ -282,7 +266,7 @@
         <footer class="sticky-footer bg-white">
           <div class="container my-auto">
             <div class="copyright text-center my-auto">
-              <span>SIAKAD &copy; Sistem Informasi Akademik</span>
+                        <span>Copyright &copy; Rental PlayStation API 2026</span>
             </div>
           </div>
         </footer>
